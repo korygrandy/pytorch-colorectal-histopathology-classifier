@@ -31,9 +31,9 @@ ENV/
 checkpoints/
 *.ckpt
 
-# Data
-data/
-datasets/
+# Data (dataset images, not source code)
+/data/
+/datasets/
 *.zip
 *.tar.gz
 
