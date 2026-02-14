@@ -4,12 +4,19 @@ Download script for the Kather Colorectal Histology Dataset.
 This script downloads the publicly available Kather Colorectal Histology dataset
 from Zenodo and prepares it for training.
 
-Dataset Citation:
-Kather, J. N., Weis, C.-A., Bianconi, F., Melchers, S. M., Schad, L. R., 
-Gaiser, T., … Zöllner, F. G. (2016). Multi-class texture analysis in colorectal 
-cancer histology. Scientific Reports, 6, 27988. http://doi.org/10.1038/srep27988
+Dataset Citations:
 
-Dataset URL: https://zenodo.org/record/53169
+1. Texture Dataset (5,000 images):
+   Kather, J. N., Weis, C.-A., Bianconi, F., Melchers, S. M., Schad, L. R., 
+   Gaiser, T., … Zöllner, F. G. (2016). Multi-class texture analysis in colorectal 
+   cancer histology. Scientific Reports, 6, 27988. http://doi.org/10.1038/srep27988
+   Dataset URL: https://zenodo.org/record/53169
+
+2. CRC Validation Dataset (7,180 images):
+   Kather, J. N., Halama, N., & Marx, A. (2018). 100,000 histological images of 
+   human colorectal cancer and healthy tissue (v0.1) [Data set]. Zenodo.
+   http://doi.org/10.5281/zenodo.1214456
+   Dataset URL: https://zenodo.org/record/1214456
 """
 
 import os

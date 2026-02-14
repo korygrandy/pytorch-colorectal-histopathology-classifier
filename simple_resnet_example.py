@@ -114,7 +114,7 @@ def example_usage():
     print("The 8 tissue classes are:")
     classes = [
         "0: Adipose tissue",
-        "1: Background/Empty",
+        "1: Empty/Background",
         "2: Debris",
         "3: Lymphocytes (immune cells)",
         "4: Mucus",
