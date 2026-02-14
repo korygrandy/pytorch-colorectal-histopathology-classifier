@@ -96,7 +96,26 @@ pip install -r requirements.txt
 
 ---
 
-## Dataset Structure
+## Dataset
+
+### Quick Start: Download Dataset
+
+We provide a convenient script to download the Kather Colorectal Histology dataset:
+
+```bash
+# Download the texture dataset (5,000 images, 8 classes)
+python download_dataset.py --dataset texture
+
+# Or download the CRC validation dataset (7,180 images, 9 classes)
+python download_dataset.py --dataset crc --output-dir data
+```
+
+The script will:
+- Download the dataset from Zenodo
+- Extract and organize it into the correct directory structure
+- Prepare it for immediate use with the training script
+
+### Dataset Structure
 
 The classifier expects data organized in the following structure:
 
@@ -117,17 +136,33 @@ data/colorectal_histology/
 └── tumor_epithelium/
 ```
 
-### Recommended Dataset
+### About the Dataset
 
 This classifier is designed to work with the **Kather Colorectal Histology Dataset**, which contains 5,000 histological images of human colorectal cancer. The dataset is publicly available and widely used in medical imaging research.
 
-You can download similar datasets from:
+**Citation:**
+Kather, J. N., Weis, C.-A., Bianconi, F., Melchers, S. M., Schad, L. R., Gaiser, T., … Zöllner, F. G. (2016). Multi-class texture analysis in colorectal cancer histology. *Scientific Reports*, 6, 27988. http://doi.org/10.1038/srep27988
+
+**Manual Download:**
 - [Zenodo - Kather et al.](https://zenodo.org/record/53169)
 - [TCIA - The Cancer Imaging Archive](https://www.cancerimagingarchive.net/)
 
 ---
 
 ## Usage
+
+### 0. Quick Example (Optional)
+
+To understand the ResNet-based neural network architecture, run the simple example:
+
+```bash
+python simple_resnet_example.py
+```
+
+This standalone script demonstrates:
+- How to create a ResNet-based classifier
+- The model architecture and custom classifier head
+- A forward pass example with dummy data
 
 ### 1. Configuration
 
@@ -223,19 +258,23 @@ pytorch-colorectal-histopathology-classifier/
 │   ├── __init__.py
 │   ├── data/
 │   │   ├── __init__.py
-│   │   └── dataset.py          # Dataset classes and data loaders
+│   │   └── dataset.py              # Dataset classes and data loaders
 │   ├── models/
 │   │   ├── __init__.py
-│   │   └── classifier.py        # Model architectures
+│   │   └── classifier.py            # Model architectures
 │   └── utils/
 │       ├── __init__.py
-│       └── helpers.py           # Training utilities
-├── train.py                     # Training script
-├── predict.py                   # Inference script
-├── config.yaml                  # Configuration file
-├── requirements.txt             # Python dependencies
-├── .gitignore                   # Git ignore patterns
-└── README.md                    # This file
+│       └── helpers.py               # Training utilities
+├── train.py                         # Training script
+├── predict.py                       # Inference script
+├── evaluate.py                      # Evaluation script
+├── download_dataset.py              # Dataset download script
+├── simple_resnet_example.py         # Simple standalone example
+├── prepare_data.py                  # Data organization helper
+├── config.yaml                      # Configuration file
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Git ignore patterns
+└── README.md                        # This file
 ```
 
 ---
