@@ -13,14 +13,14 @@ data:
   
   # Class names (Kather Colorectal Histology Dataset)
   classes:
-    - "tumor"           # ADI - Adipose tissue
-    - "stroma"          # BACK - Background
-    - "complex"         # DEB - Debris
-    - "lympho"          # LYM - Lymphocytes
-    - "mucosa"          # MUC - Mucus
-    - "muscle"          # MUS - Smooth muscle
-    - "normal"          # NORM - Normal colon mucosa
-    - "tumor_epithelium" # TUM - Colorectal adenocarcinoma epithelium
+    - "tumor"    # 01_TUMOR
+    - "stroma"   # 02_STROMA
+    - "complex"  # 03_COMPLEX
+    - "lympho"   # 04_LYMPHO
+    - "debris"   # 05_DEBRIS
+    - "mucosa"   # 06_MUCOSA
+    - "adipose"  # 07_ADIPOSE
+    - "empty"    # 08_EMPTY
 
 # Model Configuration
 model:

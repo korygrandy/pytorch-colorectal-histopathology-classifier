@@ -111,10 +111,10 @@ data/colorectal_histology/
 │   └── ...
 ├── complex/
 ├── lympho/
+├── debris/
 ├── mucosa/
-├── muscle/
-├── normal/
-└── tumor_epithelium/
+├── adipose/
+└── empty/
 ```
 
 ### Recommended Dataset
@@ -124,6 +124,21 @@ This classifier is designed to work with the **Kather Colorectal Histology Datas
 You can download similar datasets from:
 - [Zenodo - Kather et al.](https://zenodo.org/record/53169)
 - [TCIA - The Cancer Imaging Archive](https://www.cancerimagingarchive.net/)
+
+### Quick Download (Recommended)
+
+This repo includes a helper script that downloads the Kather tiles ZIP from Zenodo,
+verifies its checksum, extracts it, and prepares the folder structure used by training.
+
+```bash
+python download_kather_dataset.py --output-dir data/colorectal_histology
+```
+
+If you re-run and want a clean re-create:
+
+```bash
+python download_kather_dataset.py --output-dir data/colorectal_histology --overwrite
+```
 
 ---
 

@@ -26,10 +26,10 @@ def prepare_kather_dataset(source_dir: str, output_dir: str):
         '02_STROMA': 'stroma',
         '03_COMPLEX': 'complex',
         '04_LYMPHO': 'lympho',
-        '05_DEBRIS': 'mucosa',
-        '06_MUCOSA': 'muscle',
-        '07_ADIPOSE': 'normal',
-        '08_EMPTY': 'tumor_epithelium'
+        '05_DEBRIS': 'debris',
+        '06_MUCOSA': 'mucosa',
+        '07_ADIPOSE': 'adipose',
+        '08_EMPTY': 'empty'
     }
     
     print("Preparing dataset structure...")
@@ -89,10 +89,10 @@ def create_sample_dataset_info():
     ├── stroma/
     ├── complex/
     ├── lympho/
+    ├── debris/
     ├── mucosa/
-    ├── muscle/
-    ├── normal/
-    └── tumor_epithelium/
+    ├── adipose/
+    └── empty/
     
     Each subdirectory should contain images of that specific tissue type.
     
@@ -115,7 +115,7 @@ def create_sample_dataset_info():
     ================================================================================
     
     1. Create the directory structure:
-       mkdir -p data/colorectal_histology/{tumor,stroma,complex,lympho,mucosa,muscle,normal,tumor_epithelium}
+         mkdir -p data/colorectal_histology/{tumor,stroma,complex,lympho,debris,mucosa,adipose,empty}
     
     2. Place your labeled images into the appropriate subdirectories
     
