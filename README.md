@@ -388,6 +388,26 @@ If you use this code in your research, please cite:
 
 ---
 
+## Continuing the Research 🚀
+
+This POC provides a solid foundation, but there's much more to explore! See **[RESEARCH_ROADMAP.md](RESEARCH_ROADMAP.md)** for detailed guidance on:
+
+- **Model Interpretability**: Implementing Grad-CAM for visual explanations
+- **Clinical Metrics**: Optimizing for high recall (sensitivity) to minimize false negatives
+- **Interactive Dashboard**: Building a Streamlit app for visual diagnostics
+- **Advanced Extensions**: Ensemble models, multi-scale analysis, and more
+- **Learning Resources**: Papers, courses, and datasets for continued learning
+
+The roadmap includes:
+- ✅ Step-by-step implementation guides
+- ✅ Code examples for next features
+- ✅ Milestone tracking for portfolio presentation
+- ✅ Ethical considerations and best practices
+
+**Next Priority**: Implement Grad-CAM visualization to show which tissue regions the model focuses on when making predictions.
+
+---
+
 ## Contact
 
 For questions, suggestions, or collaborations:
@@ -400,7 +420,7 @@ For questions, suggestions, or collaborations:
 
 This project represents more than just code—it's a tribute to loved ones lost to cancer and a small contribution toward better medical diagnostics. Every line written carries the hope that AI can help save lives and spare families from the pain of losing someone to this devastating disease.
 
-**In loving memory of all those who have fought the battle against cancer. You are not forgotten.**
+**In loving memory of Shelly Rae and all those who have fought the battle against cancer. You are not forgotten.**
 
 ---
 
